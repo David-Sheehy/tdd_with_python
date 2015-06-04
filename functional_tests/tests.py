@@ -61,7 +61,7 @@ class NewVisitorTest(LiveServerTestCase):
 
         ## We use a new browser session to make sure that no information of
         ## Edith's is coming through the cookies etc
-        self.browser.quite()
+        self.browser.quit()
         self.browser = webdriver.Firefox()
 
         # France visits the home page. There is no sign of Edith's list
